@@ -1,10 +1,9 @@
 import commands.GarageDoorOpenCommand;
 import commands.LightOnCommand;
-import commands.SimpleRemoteControl;
 import devices.GarageDoor;
 import devices.Light;
 
-public class remoteControlTest {
+public class RemoteControlTest {
     public static void main(String[] args) {
         SimpleRemoteControl remote = new SimpleRemoteControl();
         Light light = new Light();

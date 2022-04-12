@@ -1,4 +1,4 @@
-package commands;
+import commands.Command;
 
 public class SimpleRemoteControl {
     Command slot;
