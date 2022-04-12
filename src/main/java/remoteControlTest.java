@@ -1,5 +1,7 @@
+import commands.GarageDoorOpenCommand;
 import commands.LightOnCommand;
 import commands.SimpleRemoteControl;
+import devices.GarageDoor;
 import devices.Light;
 
 public class remoteControlTest {
@@ -8,7 +10,14 @@ public class remoteControlTest {
         Light light = new Light();
         LightOnCommand lightOn = new LightOnCommand(light);
 
+        GarageDoor garageDoor = new GarageDoor();
+        GarageDoorOpenCommand garageOpen = new GarageDoorOpenCommand(garageDoor);
+
+
         remote.setCommand(lightOn);
+        remote.buttonWasPressed();
+
+        remote.setCommand(garageOpen);
         remote.buttonWasPressed();
     }
 }

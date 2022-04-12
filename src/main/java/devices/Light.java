@@ -1,10 +1,11 @@
 package devices;
 
 public class Light {
-    public void on(){
+    public void on() {
         System.out.println("Light switched on");
     }
-    public void off(){
+
+    public void off() {
         System.out.println("Light switched off");
     }
 }
